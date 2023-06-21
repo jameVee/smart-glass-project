@@ -1,0 +1,22 @@
+<html>
+<head><title>Show Result</title></head>
+<body>
+<table border='1'>
+    <tr>
+    {% for c_name in column_names %}
+        <td align='center'><b>{{ c_name }}</b></td>
+    {% endfor %}
+    </tr>
+    {% for row in data_value %}
+    <tr>
+        {% for column in row %}
+        <td>{{ column }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+<pre>{{ data_json }}</pre>
+
+</body>
+</html>

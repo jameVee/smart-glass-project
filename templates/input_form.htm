@@ -1,0 +1,23 @@
+<html>
+<head><title>Input Form</title></head>
+
+<body>
+<form method="post">
+<table border="0">
+    <tr><td>Employee ID:</td><td><input type="text" name="employee_id" value="{{ request.form['employee_id'] }}"></td></tr>
+    <tr><td>Name:</td><td><input type="text" name="name" value="{{ request.form['name'] }}"></td></tr>
+    <tr><td>Job:</td><td><input type="text" name="job" value="{{ request.form['job'] }}"></td></tr>
+    <tr><td>Salary:</td><td><input type="text" name="salary" value="{{ request.form['salary'] }}"></td></tr>
+    <tr><td>Department ID:</td><td><input type="text" name="department_id"  value="{{ request.form['department_id'] }}"></td></tr>
+</table>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <font color="red">{{ message }}</font><br>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<button type="submit">Submit</button><button type="reset">Clear</button>
+</form>
+</body>
+</html>
