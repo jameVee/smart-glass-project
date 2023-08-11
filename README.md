@@ -5,6 +5,6 @@ Describe : โปรเจคแว่นตาสำหรับคนตาบ
 
 Model : Neural Netword
 
-Tools : Keras
+Tools : Keras , ESP32-CAM
 
 Training model : [face_nn.ipynb](https://github.com/jameVee/smart-glass-project/blob/main/face_nn.ipynb)
