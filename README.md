@@ -3,7 +3,7 @@
 
 Describe : โปรเจคแว่นตาสำหรับคนตาบอดในการแจ้งเตือนเมื่อพบเห็นคนรู้จัก
 
-Model : Neural Netword
+Model : Neural Network
 
 Tools : Keras , ESP32-CAM
 
